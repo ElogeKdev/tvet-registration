@@ -1,0 +1,117 @@
+{
+  "info": {
+    "_postman_id": "12345678-abcd-efgh-ijkl-123456789000",
+    "name": "TVET Student Registration API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Add Student",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"full_name\": \"John Doe\",\n  \"email\": \"john@gmail.com\"\n}"
+        },
+        "url": {
+          "raw": "http://localhost:3000/students",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "3000",
+          "path": ["students"]
+        }
+      }
+    },
+    {
+      "name": "Get Students",
+      "request": {
+        "method": "GET",
+        "url": {
+          "raw": "http://localhost:3000/students",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "3000",
+          "path": ["students"]
+        }
+      }
+    },
+    {
+      "name": "Add Course",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"course_name\": \"Backend Development\",\n  \"course_code\": \"BD101\"\n}"
+        },
+        "url": {
+          "raw": "http://localhost:3000/courses",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "3000",
+          "path": ["courses"]
+        }
+      }
+    },
+    {
+      "name": "Get Courses",
+      "request": {
+        "method": "GET",
+        "url": {
+          "raw": "http://localhost:3000/courses",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "3000",
+          "path": ["courses"]
+        }
+      }
+    },
+    {
+      "name": "Enroll Student",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"student_id\": 1,\n  \"course_id\": 1\n}"
+        },
+        "url": {
+          "raw": "http://localhost:3000/enrollments",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "3000",
+          "path": ["enrollments"]
+        }
+      }
+    },
+    {
+      "name": "Get Enrollments",
+      "request": {
+        "method": "GET",
+        "url": {
+          "raw": "http://localhost:3000/enrollments",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "3000",
+          "path": ["enrollments"]
+        }
+      }
+    }
+  ]
+}
